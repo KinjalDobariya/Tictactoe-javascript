@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tictac</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+
+
+</head>
+
+<body>
+	<br><br><br>
+	<h3>Player 1 = X &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Player 2 = O
+	</h3>
+
+
+
+	<div class="container">
+		<ul class="main">
+			<li><input type="button" name="" value="  " onclick="setval('1')" class="btn" id="_btn1"></li>
+			<li><input type="button" name="" value="  " onclick="setval('2')" class="btn" id="_btn2"></li>
+			<li><input type="button" name="" value="  " onclick="setval('3')" class="btn" id="_btn3"></li>
+			<li><input type="button" name="" value="  " onclick="setval('4')" class="btn" id="_btn4"></li>
+			<li><input type="button" name="" value="  " onclick="setval('5')" class="btn" id="_btn5"></li>
+			<li><input type="button" name="" value="  " onclick="setval('6')" class="btn" id="_btn6"></li>
+			<li><input type="button" name="" value="  " onclick="setval('7')" class="btn" id="_btn7"></li>
+			<li><input type="button" name="" value="  " onclick="setval('8')" class="btn" id="_btn8"></li>
+			<li><input type="button" name="" value="  " onclick="setval('9')" class="btn" id="_btn9"></li>
+		</ul>
+		<button onclick="isconfirm(true)" class="btn_reset">Restart</button>
+	</div>
+
+	<div class="overlay" id="overlay" hidden>
+		<div class="confirm-box">
+			<div class="title">
+				<h2>Confirmation</h2>
+			</div>
+			<p>Congratulation.....<span id="player"></span> is Winner</p>
+			<div class="btn_item">
+				<button onclick="isconfirm(true)" class="btn_c">Restart</button>
+				<button onclick="isconfirm(false)" class="btn_c">cancle</button>
+			</div>
+		</div>
+	</div>
+	<div class="overlay" id="overlay2" hidden>
+		<div class="confirm-box">
+			<div class="title">
+				<h2>Confirmation</h2>
+			</div>
+			<p>Opps...Game Drow</p>
+			<div class="btn_item">
+				<button onclick="isconfirm(true)" class="btn_c">Restart</button>
+				<button onclick="isconfirm(false)" class="btn_c">cancle</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
